@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reservation App</title>
+    <link rel="stylesheet" href="./clock/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Reservation</h1>
+    </header>
+    <main>
+      <section id="booking-form">
+        <h2>Make a Reservation</h2>
+        <label for="service">Service Type:</label>
+        <select id="service">
+          <option value="restoran">Restourant</option>
+          <option value="otel">Hotel</option>
+          <option value="randevu">Randevu</option>
+        </select>
+        <label for="date">Date:</label>
+        <input type="date" id="date" />
+        <label for="time">Saat:</label>
+        <input type="time" id="time" />
+        <button id="book-button">Make reservation</button>
+      </section>
+      <section id="booking-list">
+        <h2>Reservations</h2>
+        <ul id="bookings"></ul>
+      </section>
+    </main>
+
+    <section id="reviews">
+      <h2>Service Ratings and Comments</h2>
+      <form id="review-form">
+        <label for="rating">Rating:</label>
+        <select id="rating">
+          <option value="5">5 star</option>
+          <option value="4">4 star</option>
+          <option value="3">3 star</option>
+          <option value="2">2 star</option>
+          <option value="1">1 star</option>
+        </select>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" rows="4"></textarea>
+        <button id="submit-review">Send</button>
+      </form>
+      <div id="reviews-list"></div>
+    </section>
+
+    <footer>&copy; 2023 Booking App</footer>
+    <script src="./clock/script.js"></script>
+  </body>
+</html>
